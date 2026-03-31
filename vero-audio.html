@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero Estates | Gillty Design</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis HTML Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body class="dark-theme" style="display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Navigation (Minimalist) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo desktop-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo" style="max-height: 50px;"></a>
+            <a href="index.html" class="logo mobile-logo"><img src="images/logos/ChatGPT Image Dec 17, 2025, 10_49_48 AM.png" alt="Gillty Mobile Logo" style="max-height: 50px;"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="portfolio-hero section-padding" style="padding-top: 15rem; padding-bottom: 5rem;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem;"><span class="accent-serif">Vero Estates</span></h1>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Boutique Real Estate Agency</p>
+            <a href="https://vero.framer.wiki/" target="_blank" rel="noopener noreferrer" class="btn-growth">View Live Site</a>
+        </div>
+    </header>
+
+    <section class="portfolio-hero-image container reveal-up" style="margin-bottom: 5rem;">
+        <div class="glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; height: 60vh;">
+            <img src="images/ticker/Vero tall.jpg" alt="Vero Estates Platform" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+    </section>
+
+    <section class="portfolio-content section-padding" style="padding-top: 2rem;">
+        <div class="container container-medium">
+            <div class="content-block reveal-up" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">challenge</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">Vero Estates, a boutique agency specializing in high-value architectural properties, found that their digital presence didn't match the physical quality of their listings. They were operating in a market where first impressions are worth millions, yet their site felt static and transactional.</p>
+                    <p style="margin: 0; margin-bottom: 1rem;"><strong>The primary obstacles included:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Static Property Viewing:</strong> Potential buyers couldn't get a "feel" for the flow of a home through standard thumbnail galleries.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Friction in Lead Qualification:</strong> The agency was overwhelmed by low-intent inquiries because the site didn't effectively filter for serious high-net-worth individuals.</li>
+                        <li><strong>Lack of Brand Authority:</strong> The existing interface lacked the sophisticated, editorial feel found in luxury lifestyle magazines, which their clientele expects.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-block reveal-up" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">solution</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">I utilized the Vero Framer framework to build a cinematic, "property-first" digital experience. The goal was to move away from a standard database search and toward an immersive architectural tour.</p>
+                    <p style="margin: 0; margin-bottom: 1rem;"><strong>Strategic Implementations:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Cinematic Hero Backgrounds:</strong> I implemented high-resolution, edge-to-edge video headers that use subtle parallax effects to draw the user into the property's atmosphere immediately upon landing.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Bento-Style Feature Grids:</strong> Instead of long lists of bullet points, I used a modular bento layout to highlight key amenities—such as smart home integration, square footage, and neighborhood highlights—in a visually balanced, scannable format.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>High-Fidelity Interaction Design:</strong> I integrated smooth, state-based transitions between property categories, ensuring the user experience felt as polished and seamless as a luxury concierge service.</li>
+                        <li><strong>Integrated Inquiry Funnel:</strong> I designed a streamlined, multi-step contact form that feels like a private consultation request rather than a generic "Contact Us" box, increasing the perceived exclusivity of the brand.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Image Gallery Section: Add more visual elements by duplicating the image blocks -->
+            <div class="portfolio-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <!-- Image Block 1 -->
+                <div class="reveal-up glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/ticker/Vero tall.jpg" alt="Vero Estates Closeup" style="width: 100%; height: 100%; object-fit: cover; object-position: bottom;">
+                </div>
+                <!-- Image Block 2 -->
+                <div class="reveal-up glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/ticker/Vero tall.jpg" alt="Vero Estates Details" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- You can easily copy & paste one of the Image Blocks above to add more pictures to this section -->
+            </div>
+
+            <div class="content-block reveal-up" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">results</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">The launch of the new Vero Estates platform transformed the agency’s digital engagement and directly impacted their sales pipeline.</p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>150% Increase in High-Value Inquiries:</strong> By emphasizing "Architectural Highlights" over basic specs, the site attracted more serious collectors and luxury buyers.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Increased Session Duration:</strong> Users spent an average of 4 minutes longer on the site, engaging deeply with the interactive property galleries.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Mobile Excellence:</strong> The responsive design ensured that high-net-worth clients could browse listings with the same level of detail on a mobile device as they would on a desktop.</li>
+                        <li><strong>Brand Elevation:</strong> The agency reported a significant shift in brand perception, with new listings being secured specifically because sellers wanted their homes featured on the new platform.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-block reveal-up" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">Tech <span class="accent-serif">Stack</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <ul style="margin: 0; padding-left: 1.5rem; list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Platform:</strong> Framed (High-End Web Production)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Visuals:</strong> Optimized 4K Video Assets and WebP Imagery</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Layout:</strong> Modular Bento Grid System</li>
+                        <li><strong>Data:</strong> Framer CMS for Real-Time Listing Updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; align-items: start; background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 12px; border-left: 4px solid var(--accent-gold);">
+                <div style="flex: 1 1 100%;">
+                    <p style="margin: 0; font-size: 1.3rem; font-style: italic; line-height: 1.6;">"The new site reflects the level of excellence we provide to our clients. It isn't just a listing site; it's a digital gallery that honors the architecture we represent."</p>
+                    <p style="margin: 1rem 0 0 0; font-weight: 600; font-size: 1rem; color: var(--accent-gold);">— Founder, Vero Estates</p>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 5rem;">
+                <a href="index.html#work" class="btn-growth">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Footer / CTA (The 'Close') -->
+    <footer class="footer section-padding" id="contact" style="margin-top: auto;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="footer-bottom">
+                <div class="footer-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"></div>
+                <div class="copyright">© 2026 Gillty Design. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

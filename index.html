@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gillty Design Studio - High-performance web development meets hyper-realistic AI product advertising. We build the stage. We create the show.">
+    <title>Gillty | Web Architecture & Cinematic Product Visuals</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis HTML Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme">
+
+    <!-- Navigation (Minimalist) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo desktop-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"
+                    style="max-height: 50px;"></a>
+            <a href="#" class="logo mobile-logo"><img src="images/logos/ChatGPT Image Dec 17, 2025, 10_49_48 AM.png" alt="Gillty Mobile Logo"
+                    style="max-height: 50px;"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: The Hero (The Hook) -->
+    <header class="hero" id="home">
+        <video class="hero-bg-video" autoplay loop muted playsinline>
+            <source src="images/video/freepik_add-an-extremely-subtle-movement_kling_720p_16-9_24fps_17167.mp4"
+                type="video/mp4">
+        </video>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-text-content text-center container">
+            <h1 class="hero-heading reveal-up">WEB. <span class="accent-serif">PRODUCT. </span> <span class=""> DESIGN.
+                </span></h1>
+            <br>
+            <p class="hero-description reveal-up"
+                style="transition-delay: 0.15s; margin-left: auto; margin-right: auto; max-width: 600px;">We build your
+                platform and the high-fidelity visuals to fill it.</p>
+
+            <div class="hero-cta-wrapper reveal-up" style="transition-delay: 0.3s; margin-bottom: 2rem;">
+                <a href="https://cal.com/shane-gilligan-v38e6t/15min" target="_blank" rel="noopener noreferrer"
+                    class="btn-growth">Get Started</a>
+            </div>
+        </div>
+
+        <div class="hero-gallery-container reveal-up">
+            <div class="hero-gallery">
+                <div class="gallery-card card-edge"><img src="images/ticker/" alt="Mockup"></div>
+                <div class="gallery-card card-outer"><img src="images/ticker/Aura 2.jpg" alt="Aura Waitlist"></div>
+                <div class="gallery-card card-mid"><img src="images/ticker/Boosty.png" alt="Boosty App"></div>
+
+                <div class="gallery-card card-center"><img src="images/ticker/creation_2397899408.png"
+                        alt="Wild Bloom Kombucha"></div>
+
+                <div class="gallery-card card-mid"><img src="images/ticker/iPad (3).jpg" alt="iPad Layout"></div>
+                <div class="gallery-card card-outer"><img src="images/ticker/Vero tall.jpg" alt="Vero View"></div>
+                <div class="gallery-card card-edge"><img src="images/ticker/creation_2398193597.jpg" alt="Render"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: The 'Our Disciplines' Grid -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-heading reveal-up" style="margin-bottom: 3rem;">
+                <h2>Our <span class="accent-serif">Disciplines</span></h2>
+            </div>
+            <div class="services-grid" style="gap: 2rem;">
+                <!-- Discipline 1 -->
+                <div class="discipline-card reveal-up">
+                    <div class="discipline-image">
+                        <img src="images/images/Boostly 2.png" alt="Web Design">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Web Design</h3>
+                        <p>UI/UX that converts. Meticulous design systems engineered for performance and aesthetics.</p>
+                    </div>
+                </div>
+
+                <!-- Discipline 2 -->
+                <div class="discipline-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="discipline-image">
+                        <img src="images/images/Screenshot 2024-11-04 200429.png" alt="Web Development">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Web Development</h3>
+                        <p>Clean, scalable code. High-end modern architectures that deliver lightning-fast experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Discipline 3 -->
+                <div class="discipline-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="discipline-image">
+                        <img src="images/images/freepik__a-bright-red-background-frames-a-dynamic-shot-of-a__4514.png"
+                            alt="AI Product Visuals">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>AI Product Visuals <span class="badge">New</span></h3>
+                        <p>Bringing products to life in cinematic environments. Studio-grade rendering bypassing
+                            traditional limits.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SLIDER (Signature Component) -->
+    <section class="showcase-slider-section section-padding">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h2>The <span class="accent-serif">AI Transformation</span></h2>
+                <p>From a raw smartphone photo to a cinematic product advertisement in record time.</p>
+            </div>
+
+            <div class="slider-wrapper reveal-up glow-container">
+                <div class="image-comparison">
+                    <!-- The "After" Image (Background) -->
+                    <div class="img-wrapper after-image cinematic-grain">
+                        <img src="images/ticker/creation_2397899408.png" alt="AI Enhanced Cinematic Ad" />
+                        <span class="label">After (AI Enhanced)</span>
+                    </div>
+
+                    <!-- The "Before" Image (Foreground/Clipped) -->
+                    <div class="img-wrapper before-image">
+                        <img src="images/product images/freepik__design-a-modern-aluminium-beverage-can-for-a-kombu__53518.png"
+                            alt="Raw Smartphone Photo" />
+                        <span class="label">Before (Raw Image)</span>
+                    </div>
+
+                    <!-- The Slider Handle -->
+                    <div class="slider-handle">
+                        <div class="slider-handle-line"></div>
+                        <div class="slider-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2.5: Full-width Video Scroll Effect -->
+    <section class="video-scroll-section"
+        style="background-color: var(--bg-dark); position: relative; width: 100vw; overflow: hidden; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+        <div class="video-showcase-wrapper scroll-scale glow-container"
+            style="width: 100vw; height: 100vh; border-radius: 0; overflow: hidden; position: relative;">
+            <video autoplay loop muted playsinline
+                style="width: 100%; height: 100%; display: block; object-fit: cover;">
+                <source src="images/video/wild-bloom-raspberry.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-heading-overlay">
+                <h2>Allow us to bring your <span class="accent-serif">product to life</span></h2>
+            </div>
+            <div class="cinematic-grain"
+                style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events: none;"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Portfolio / Showreel (The 'Proof') -->
+    <section class="portfolio section-padding" id="work">
+        <div class="container">
+            <div class="portfolio-list">
+
+                <!-- Project 1: Web Mockup -->
+                <div class="project-item mix-web reveal-up">
+                    <div class="project-info">
+                        <h2>01. <span class="accent-serif">Tricia's Therapies</span></h2>
+                        <p>Holistic Wellness & Nursing</p>
+                        <a href="lumina-estate.html" class="btn-link">View Case Study <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-visual glow-container" data-speed="0.9">
+                        <!-- Placeholder for a web mockup -->
+                        <img src="images/Tricias Therapies/Tricia.png" alt="Web Mockup Project" class="parallax-img">
+                    </div>
+                </div>
+
+                <!-- Project 2: AI Visual -->
+                <div class="project-item mix-ai reveal-up">
+                    <div class="project-info">
+                        <h2>02. <span class="accent-serif">Boosty</span></h2>
+                        <p>Cinematic AI Product Ad</p>
+                        <a href="Boosty.html" class="btn-link">View Case Study <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-visual glow-container cinematic-grain" data-speed="0.8">
+                        <img src="images/Boosty/I-Phone 17.jpg" alt="Cinematic AI Product Render" class="parallax-img">
+                    </div>
+                </div>
+
+                <!-- Project 3: Web Mockup -->
+                <div class="project-item mix-web reveal-up">
+                    <div class="project-info">
+                        <h2>03. <span class="accent-serif">Aura Wellness</span></h2>
+                        <p>E-commerce Web Development</p>
+                        <a href="aura.html" class="btn-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-visual glow-container" data-speed="0.85">
+                        <!-- Placeholder for a web mockup -->
+                        <img src="images/Aura/Aura 2.jpg" alt="Web Mockup Project" class="parallax-img">
+                    </div>
+                </div>
+
+                <!-- Project 4: AI Visual -->
+                <div class="project-item mix-ai reveal-up">
+                    <div class="project-info">
+                        <h2>04. <span class="accent-serif">Vero Estates</span></h2>
+                        <p>Boutique Real Estate Agency</p>
+                        <a href="vero-audio.html" class="btn-link">View Case Study <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-visual glow-container cinematic-grain" data-speed="0.75">
+                        <!-- Placeholder for a luxury product AI image -->
+                        <img src="images/ticker/Vero tall.jpg" alt="Cinematic AI Product Render" class="parallax-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3.5: Interactive Pricing Calculator -->
+    <section class="pricing-calculator-section section-padding" id="pricing"
+        style="background-color: #050505; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container container-medium">
+            <div class="section-heading text-center reveal-up">
+                <h2>Pricing <span class="accent-serif">Calculator</span></h2>
+                <p>Get an instant quote for your project.</p>
+            </div>
+
+            <div class="calculator-wizard reveal-up" style="transition-delay: 0.2s;">
+                <!-- Step 1: Alignment -->
+                <div class="calc-step active" id="step-1">
+                    <h3 class="step-title">01. Alignment</h3>
+                    <p class="step-desc">Establish your current stylistic foundation.</p>
+
+                    <div class="form-group mb-4">
+                        <label for="brand-url">Current Brand URL or Portfolio link</label>
+                        <input type="url" id="brand-url" placeholder="e.g., https://yourbrand.com" class="calc-input">
+                    </div>
+
+                    <button class="btn-calc-next" data-next="step-2">Continue <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Step 2: Architecture -->
+                <div class="calc-step" id="step-2">
+                    <h3 class="step-title">02. Architecture</h3>
+                    <p class="step-desc">Select the web foundation needed to house your brand.</p>
+
+                    <div class="radio-group tier-selection">
+                        <label class="radio-card tier-card">
+                            <input type="radio" name="web_tier" value="1-Page Cinema" data-price="1800" checked>
+                            <span class="card-content">
+                                <h4>1-Landing Page</h4>
+                                <p>High-conversion, immersive single-scroll.</p>
+                            </span>
+                        </label>
+                        <label class="radio-card tier-card">
+                            <input type="radio" name="web_tier" value="5-Page Brand Authority" data-price="2600">
+                            <span class="card-content">
+                                <h4>5-Page Brand Authority</h4>
+                                <p>Standard structure, CMS, SEO.</p>
+                            </span>
+                        </label>
+                        <label class="radio-card tier-card">
+                            <input type="radio" name="web_tier" value="Bespoke Digital Experience" data-price="custom">
+                            <span class="card-content">
+                                <h4>Bespoke Digital Experience</h4>
+                                <p>Custom logic, E-commerce, or Portals.</p>
+                            </span>
+                        </label>
+                        <label class="radio-card tier-card">
+                            <input type="radio" name="web_tier" value="AI Visuals Only" data-price="0">
+                            <span class="card-content">
+                                <h4>AI Visuals Only</h4>
+                                <p>High-fidelity renders without a website build.</p>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="step-actions">
+                        <button class="btn-calc-prev" data-prev="step-1"><i class="fa-solid fa-arrow-left"></i>
+                            Back</button>
+                        <button class="btn-calc-next" data-next="step-3">Continue <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Visuals -->
+                <div class="calc-step" id="step-3">
+                    <h3 class="step-title">03. High-Fidelity Visuals</h3>
+                    <p class="step-desc">Determine the volume of bespoke AI renders required.</p>
+
+                    <div class="form-group mb-4">
+                        <label for="visual-count">How many unique product visuals (stills) do you require?</label>
+                        <input type="number" id="visual-count" class="calc-input" min="0" value="0">
+                        <p class="input-hint" id="visual-tier-hint">€100 per visual.</p>
+                    </div>
+
+                    <div class="visual-addons mb-4">
+                        <h4>Motion Add-ons</h4>
+                        <label class="checkbox-card">
+                            <input type="checkbox" id="addon-loops">
+                            <span class="card-content">
+                                <div>
+                                    <h5>Cinematic Loops</h5>
+                                    <p>Seamless 4K atmospheric motion</p>
+                                </div>
+                                <span class="price-tag">+€250/ea</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" id="addon-master">
+                            <span class="card-content">
+                                <div>
+                                    <h5>Brand Reveal Master Video</h5>
+                                    <p>15-second choreographed sequence</p>
+                                </div>
+                                <span class="price-tag">+€500</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="step-actions">
+                        <button class="btn-calc-prev" data-prev="step-2"><i class="fa-solid fa-arrow-left"></i>
+                            Back</button>
+                        <button class="btn-calc-next" data-next="step-4">Calculate <i
+                                class="fa-solid fa-bolt"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 4: The Projection -->
+                <div class="calc-step" id="step-4">
+                    <h3 class="step-title" style="color: var(--accent);">The Projection</h3>
+
+                    <div class="summary-box">
+                        <div class="summary-list">
+                            <div class="summary-item"><strong>Web Architecture:</strong> <span id="sum-web">1-Page
+                                    "Cinema" Landing</span></div>
+                            <div class="summary-item"><strong>Visual Count:</strong> <span id="sum-visuals">0</span>
+                            </div>
+                            <div class="summary-item" id="sum-addons-container" style="display: none;">
+                                <strong>Add-ons:</strong> <span id="sum-addons">None</span>
+                            </div>
+                        </div>
+
+                        <div class="total-projection">
+                            <h4>Estimated Investment</h4>
+                            <div class="total-amount" id="sum-total">€1,800</div>
+                        </div>
+
+                        <div class="style-disclaimer">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <p>All deliverables are engineered to match and enhance the current style and brand identity
+                                of <span id="sum-url-display"
+                                    style="color: var(--text-primary); text-decoration: underline;">your brand</span>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="final-cta-area text-center" style="margin-top: 3rem;">
+                        <p id="high-end-message"
+                            style="margin-bottom: 2rem; color: #ffffffb2; font-size: 1.1rem; max-width: 600px; margin-inline: auto;">
+                            Bespoke builds and high-fidelity AI environments require precise creative alignment. Secure
+                            a strategy session to refine your roadmap and ensure a perfect stylistic match.
+                        </p>
+                        <a href="https://cal.com/shane-gilligan-v38e6t/15min" target="_blank" rel="noopener noreferrer"
+                            class="btn-growth" style="font-size: 1.2rem; padding: 1.2rem 3rem;">
+                            <i class="fa-regular fa-calendar" style="margin-right: 0.8rem;"></i> Book Your Discovery
+                            Call
+                        </a>
+                    </div>
+
+                    <div class="step-actions" style="justify-content: center; margin-top: 2rem;">
+                        <button class="btn-calc-prev" data-prev="step-3"
+                            style="background: transparent; padding: 0.5rem;"><i class="fa-solid fa-arrow-left"></i>
+                            Recalculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: The 'Process' / How it Works -->
+    <section class="process section-padding" id="process">
+        <div class="container container-medium">
+            <div class="section-heading text-center reveal-up">
+                <h2>Web Design & <span class="accent-serif">AI Workflow</span></h2>
+                <p>Bypassing traditional photography limits to deliver studio-grade visuals in record time.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-progress"></div>
+                <!-- Step 1 -->
+                <div class="process-step reveal-up">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Consult</h3>
+                        <p>We analyze your brand vision, target demographic, and current assets (even if it's just a raw
+                            smartphone snap) to determine the ideal aesthetic direction.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step reveal-up" style="transition-delay: 0.1s;">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Concept</h3>
+                        <p>Architecting the digital set. We conceptualize lighting, environment, and mood, leveraging AI
+                            to construct hyper-realistic scenes previously impossible without significant budget.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step reveal-up" style="transition-delay: 0.2s;">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Create</h3>
+                        <p>Execution and refinement. We generate the final high-fidelity cinematic visuals and
+                            seamlessly integrate them into high-converting web experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4.5: Everything your business needs -->
+    <section class="everything-needs-section"
+        style="position: relative; width: 100vw; overflow: hidden; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: var(--bg-dark);">
+        <div class="video-showcase-wrapper"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.4;">
+            <video autoplay loop muted playsinline
+                style="width: 100%; height: 100%; display: block; object-fit: cover;">
+                <source src="images/video/freepik__closeup-shot-a-focused-man-working-at-a-sleek-desk__42342.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <div class="section-heading reveal-up">
+                <h2 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 2rem;">Everything your business needs to
+                    <span class="accent-serif">grow online.</span>
+                </h2>
+                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto;">High-converting Web Design intertwined
+                    with Cinematic AI Visuals. We build the architecture of your brand and the premium assets that sell
+                    it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: The Testimonial / Trust Section -->
+    <section class="testimonial section-padding grain-bg reveal-block">
+        <div class="container text-center">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <blockquote class="serif-quote">
+                "Shane was a pleasure to work with when setting up a website for my business. From the initial proposal
+                to the completion of the website Shane exceeded my expectations. Highly professional and would highly
+                recommend."
+            </blockquote>
+            <div class="quote-author">
+                <strong>Tricia Noone</strong>
+                <span>Tricia's Therapies</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5.25: About the Founder -->
+    <section class="founder-section section-padding" id="founder"
+        style="background-color: #080808; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div class="founder-grid"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="founder-image reveal-up"
+                    style="position: relative; display: flex; justify-content: center; align-items: flex-end;">
+                    <div class="founder-glow"
+                        style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); width: 80%; aspect-ratio: 1/1; background: radial-gradient(circle, rgba(182, 255, 59, 0.45) 0%, rgba(182, 255, 59, 0) 65%); z-index: 1; filter: blur(50px); border-radius: 50%;">
+                    </div>
+                    <img src="images/images/Shane_upscaled.png" alt="Shane Gill - Founder"
+                        style="width: 100%; max-width: 400px; height: auto; display: block; position: relative; z-index: 2; mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%);">
+                </div>
+
+                <div class="founder-text reveal-up" style="transition-delay: 0.2s;">
+                    <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">The vision behind <br><span
+                            class="accent-serif">Gillty Design.</span></h2>
+                    <p style="font-size: 1.15rem; color: #ffffffb2; line-height: 1.7; margin-bottom: 2rem;">I founded
+                        Gillty Design Studio because I realized there was a massive gap between beautiful websites and
+                        content that actually converts. Too many brands settle for generic stock photos or have to pay
+                        tens of thousands for agency photo shoots.</p>
+                    <p style="font-size: 1.15rem; color: #ffffffb2; line-height: 1.7; margin-bottom: 2rem;">By combining
+                        high-performance web architecture with studio-grade cinematic AI rendering, we provide an
+                        all-in-one ecosystem to build your platform and the hyper-realistic visuals to fill it, without
+                        the traditional friction.</p>
+                    <h4
+                        style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; font-style: italic; color: var(--text-primary); margin-bottom: 0.5rem;">
+                        Shane Gilligan</h4>
+                    <span
+                        style="color: var(--accent); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Founder
+                        & Lead Designer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5.5: FAQs -->
+    <section class="faq-section section-padding" id="faq">
+        <div class="container container-medium">
+            <div class="section-heading text-center reveal-up">
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 3rem;">Frequently <span
+                        class="accent-serif">asked questions.</span></h2>
+            </div>
+            <div class="faq-list">
+
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>How long does it take to build a website?</h3>
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most websites are completed within 2-4 weeks, depending on complexity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>Do you offer revisions?</h3>
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer unlimited revisions to ensure your site is perfect.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>Can I pay in instalments?</h3>
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes monthly instalments can be arranged or you can split payment into 3-4 payments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>Can I request changes to my website after it's live?</h3>
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer unlimited help and revisions up until launch.<br><br>Once launched we offer 3 weeks
+                            post launch support in case anything goes wrong however, this does not include any major
+                            changes to your site. If you would like to receive monthly support then this can be added on
+                            upon purchase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>Does your package come with hosting?</h3>
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hosting does not come with the labeled packages above however this can be added as an add-on
+                            upon purchase. Hosting starts at €30 euro a month depending on your needs.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5.75: Referral Program -->
+    <section class="referral-section section-padding grain-bg" id="referral"
+        style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container container-medium text-center">
+            <div class="section-heading reveal-up">
+                <i class="fa-solid fa-user-plus"
+                    style="font-size: 3rem; color: var(--accent); margin-bottom: 1.5rem;"></i>
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">Refer a <span
+                        class="accent-serif">Friend.</span></h2>
+                <h3
+                    style="color: var(--accent); font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-serif); font-style: italic;">
+                    Receive 10% Off Your Bill</h3>
+                <p
+                    style="font-size: 1.15rem; color: #ffffffb2; line-height: 1.7; margin-bottom: 2.5rem; max-width: 600px; margin-inline: auto;">
+                    Know someone who needs a high-performance web architecture or cinematic product visuals? Refer a
+                    friend and get 10% off your final bill when they book a project with us.
+                </p>
+
+                <div class="referral-tcs text-left"
+                    style="background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); max-width: 700px; margin: 0 auto; text-align: left;">
+                    <h4
+                        style="font-family: var(--font-sans); font-size: 1rem; color: var(--text-primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Terms & Conditions</h4>
+                    <ul
+                        style="color: #ffffffb2; font-size: 0.95rem; line-height: 1.6; list-style-type: disc; padding-left: 1.5rem; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;">The referred client must explicitly mention your name during
+                            their initial discovery call.</li>
+                        <li style="margin-bottom: 0.5rem;">The 10% discount is applied to your final invoice or can be
+                            credited towards a future project or add-on service.</li>
+                        <li style="margin-bottom: 0.5rem;">The referred project must be signed and the deposit paid
+                            before your discount becomes valid.</li>
+                        <li>This offer cannot be combined with any other promotions or discounts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Footer / CTA (The 'Close') -->
+    <footer class="footer section-padding" id="contact">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="footer-cta text-center reveal-up">
+                <h2 class="massive-text" style="margin-bottom: 3rem;">READY TO BRING <br><span class="accent-serif">YOUR BRAND TO LIFE?</span></h2>
+                <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 2rem; color: var(--text-primary);">Have a Question? We would love to help.</h3>
+                <form class="minimal-contact-form" action="mailto:hello@gillty.design" method="POST" enctype="text/plain" style="max-width: 500px; margin: 0 auto; text-align: left;">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="1" placeholder="Your Message" required style="resize: vertical; min-height: 45px; padding-top: 1rem;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" style="align-self: center;">
+                        Send Message <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-minimal-layout reveal-up">
+                <!-- Minimalist Contact Booking -->
+                <div class="footer-form-wrapper">
+                    <p
+                        style="font-size: 1.15rem; color: #ffffffb2; line-height: 1.7; margin-bottom: 2rem; max-width: 500px;">
+                        Bespoke builds and high-fidelity AI environments require precise creative alignment. Secure a
+                        strategy session to refine your roadmap and ensure a perfect stylistic match.</p>
+                    <a href="https://cal.com/shane-gilligan-v38e6t/15min" target="_blank" rel="noopener noreferrer"
+                        class="btn-submit"
+                        style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; max-width: max-content;">
+                        <i class="fa-regular fa-calendar" style="margin-right: 0.5rem;"></i> Book Your Discovery Call
+                    </a>
+                </div>
+
+                <!-- Footer Links/Socials matching Gillty spacing -->
+                <div class="footer-meta">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:hello@gillty.design">hello@gillty.design</a></li>
+                            <li><a href="https://twitter.com/gilltydesign" target="_blank">Twitter / X</a></li>
+                            <li><a href="https://instagram.com/gilltydesign" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"></div>
+                <div class="copyright">© 2026 Gillty Design. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

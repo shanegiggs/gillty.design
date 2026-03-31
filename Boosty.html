@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Onyx | Gillty Design</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis HTML Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme" style="display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Navigation (Minimalist) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo desktop-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"
+                    style="max-height: 50px;"></a>
+            <a href="index.html" class="logo mobile-logo"><img src="images/logos/ChatGPT Image Dec 17, 2025, 10_49_48 AM.png" alt="Gillty Mobile Logo"
+                    style="max-height: 50px;"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="portfolio-hero section-padding" style="padding-top: 15rem; padding-bottom: 5rem;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem;"><span class="accent-serif">Boosty
+                    AI</span></h1>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Modern SAAS Landing Page</p>
+            <a href="https://boosty.framer.ai/" target="_blank" rel="noopener noreferrer" class="btn-growth">View Live Site</a>
+        </div>
+    </header>
+
+    <section class="portfolio-hero-image container reveal-up" style="margin-bottom: 5rem;">
+        <div class="glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; height: 60vh;">
+            <img src="images/Boosty/Boostly main.png" onerror="this.src='images/ticker/creation_2398193597.jpg'"
+                alt="Chronos Onyx Render"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+    </section>
+
+    <section class="portfolio-content section-padding" style="padding-top: 2rem;">
+        <div class="container container-medium">
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">challenge</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;">Our client, Boosty, a rapidly growing AI-driven analytics platform, was
+                        struggling with a "leaky bucket" problem. While their marketing campaigns were driving
+                        significant traffic, their existing landing page was failing to convert.
+
+                        Key issues included:
+
+                        High Bounce Rates: The previous site loaded slowly (4.2s average), leading to a 65% bounce rate
+                        on mobile.
+
+                        Message Confusion: Users couldn’t quickly grasp the value proposition among cluttered text
+                        blocks.
+
+                        Design Inconsistency: The brand felt "dated" compared to their cutting-edge AI product, causing
+                        a lack of trust with enterprise leads.
+
+                        Development Bottlenecks: Every minor content update required a developer, slowing down their
+                        marketing iterations.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">solution</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;"> I leveraged the Boost Framer Architecture to rebuild their digital presence
+                        from the ground up. The goal was to create a "Conversion Engine" that combined aesthetic
+                        minimalism with technical speed.
+
+                        Strategic Implementations:
+
+                        Modular Component System: I utilized over 60 custom-styled sections to create a unique,
+                        non-linear user journey that addressed specific customer pain points.
+
+                        Visual Storytelling: Replaced heavy text with sleek, dark-themed interactive components and
+                        scroll-based animations to guide the user’s eye toward the "Get Started" CTA.
+
+                        Zero-Code Agility: By building in Framer, I empowered the marketing team to update copy and
+                        images via the integrated CMS, removing the 2-week wait time for dev tickets.
+
+                        Performance Optimization: Every asset was optimized for SEO and "blink-of-an-eye" load speeds,
+                        ensuring a seamless experience across desktop and mobile.</p>
+                </div>
+            </div>
+
+            <!-- Image Gallery Section: Add more visual elements by duplicating the image blocks -->
+            <div class="portfolio-gallery"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <!-- Image Block 1 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Boosty/Boostly 1.png" alt="Chronos Onyx Details"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- Image Block 2 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Boosty/Boostly 2.png" onerror="this.src='images/ticker/creation_2398193597.jpg'"
+                        alt="Chronos Onyx Details 2"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- You can easily copy & paste one of the Image Blocks above to add more pictures to this section -->
+            </div>
+            <!-- Image Gallery Section: Add more visual elements by duplicating the image blocks -->
+            <div class="portfolio-gallery"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <!-- Image Block 1 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Boosty/Boostly 3.png" alt="Chronos Onyx Details"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- Image Block 2 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Boosty/Boostly 4.png" onerror="this.src='images/ticker/creation_2398193597.jpg'"
+                        alt="Chronos Onyx Details 2"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- You can easily copy & paste one of the Image Blocks above to add more pictures to this section -->
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">results</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;">
+                        The relaunch of Boosty transformed their digital footprint from a passive brochure into an
+                        active sales tool.
+
+                        +140% Conversion Rate: Sign-ups for the free trial more than doubled within the first 30 days.
+
+                        98/100 Lighthouse Score: Achieved near-perfect performance scores, reducing mobile bounce rates
+                        by 42%.
+
+                        4x Faster Iteration: The marketing team now deploys new campaign landing pages in hours instead
+                        of weeks.
+
+                        Enterprise Trust: The polished, modern aesthetic directly contributed to closing three "Big
+                        Tech" pilot programs within the first quarter of the new site going live.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 5rem;">
+                <a href="index.html#work" class="btn-growth">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Footer / CTA (The 'Close') -->
+    <footer class="footer section-padding" id="contact" style="margin-top: auto;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="footer-bottom">
+                <div class="footer-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"></div>
+                <div class="copyright">© 2026 Gillty Design. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

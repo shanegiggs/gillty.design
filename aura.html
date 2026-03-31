@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Aerial Systems | Gillty Design</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis HTML Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme" style="display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Navigation (Minimalist) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo desktop-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"
+                    style="max-height: 50px;"></a>
+            <a href="index.html" class="logo mobile-logo"><img src="images/logos/ChatGPT Image Dec 17, 2025, 10_49_48 AM.png" alt="Gillty Mobile Logo"
+                    style="max-height: 50px;"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="portfolio-hero section-padding" style="padding-top: 15rem; padding-bottom: 5rem;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem;"><span class="accent-serif">Aura
+                    Aerial Systems</span></h1>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Aura Drone Landing Page</p>
+            <a href="https://aura.framer.media/" target="_blank" rel="noopener noreferrer" class="btn-growth">View Live
+                Site</a>
+        </div>
+    </header>
+
+    <section class="portfolio-hero-image container reveal-up" style="margin-bottom: 5rem;">
+        <div class="glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; height: 60vh;">
+            <img src="images/Aura/Aura 2.jpg" alt="Aura Wellness Web Design"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+        </div>
+    </section>
+
+    <section class="portfolio-content section-padding" style="padding-top: 2rem;">
+        <div class="container container-medium">
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">challenge</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;">Aura Aerial Systems—a leader in autonomous inspection and cinematography
+                        drones—had a "specs vs. story" problem. Their previous website was a dense spreadsheet of
+                        technical data (battery life, rotors, payload) that failed to capture the awe-inspiring
+                        capabilities of their hardware.</p>
+                    <br>
+                    <h2><b>The primary roadblocks were:</b></h2>
+                    <br>
+                    Static Product Presentation: Users couldn't "feel" the drone's movement or see the world through
+                    its lens.
+                    <br>
+                    Low Lead Quality: The site attracted hobbyists rather than the high-value industrial and film
+                    production clients they targeted.
+                    <br>
+
+                    Technical Friction: Large 4K flight footage was slowing down the site, hurting SEO and causing
+                    mobile users to drop off before seeing the product in action.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">solution</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;">Using the Aura Design System, I pivoted the brand from "hardware manufacturer"
+                        to "aerospace innovator." The goal was to create a high-octane, immersive experience that
+                        mirrored the precision of flight.</p>
+                    <br>
+                    <h2><b>Strategic Implementations:</b></h2>
+                    <br>
+                    <p style="margin: 0;"><b>Immersive Video Integration:</b> I implemented scroll-synced video
+                        backgrounds that allow users to "pilot" the page, transitioning from ground-level shots to
+                        high-altitude sweeps as they scroll.</p>
+                    <br>
+                    <p style="margin: 0;"><b>Interactive Spec Comparison:</b> Instead of static tables, I built a
+                        "Hangar" section where users can toggle between drone models (Aura Pro vs. Aura Stealth) to see
+                        real-time shifts in performance metrics.</p>
+                    <br>
+                    <p style="margin: 0;"><b>"The View from Above" Gallery:</b> A high-performance CMS-driven masonry
+                        grid showcased 8K footage and thermal imaging samples, proving the hardware's value through
+                        visual evidence.</p>
+                    <br>
+                    <p style="margin: 0;"><b>Optimized Performance:</b> I utilized Framer’s advanced asset optimization
+                        to ensure that heavy video content loaded instantly, maintaining a "fly-by" speed for the user
+                        experience.</p>
+                </div>
+            </div>
+
+            <!-- Image Bento Box Section -->
+            <style>
+                .bento-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
+                    margin-bottom: 5rem;
+                }
+
+                .bento-full {
+                    grid-column: span 2;
+                }
+
+                .bento-half {
+                    grid-column: span 1;
+                }
+
+                @media (max-width: 768px) {
+                    .bento-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .bento-full,
+                    .bento-half {
+                        grid-column: span 1;
+                    }
+                }
+            </style>
+            <div class="portfolio-gallery bento-grid">
+
+                <!-- Landscape 1 -->
+                <div class="reveal-up glow-container cinematic-grain bento-full"
+                    style="border-radius: 12px; overflow: hidden;">
+                    <img src="images/Aura/Gemini_Generated_Image_aiklhhaiklhhaikl.png" alt="Aura System Render 1"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; aspect-ratio: 16/9;">
+                </div>
+
+                <!-- Portrait 1 -->
+                <div class="reveal-up glow-container cinematic-grain bento-half"
+                    style="border-radius: 12px; overflow: hidden;">
+                    <img src="images/Aura/Aura.png" alt="Aura System View"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; aspect-ratio: 4/5;">
+                </div>
+
+                <!-- Portrait 2 -->
+                <div class="reveal-up glow-container cinematic-grain bento-half"
+                    style="border-radius: 12px; overflow: hidden;">
+                    <img src="images/Aura/Aura 2.jpg" alt="Aura System Detail"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; aspect-ratio: 4/5;">
+                </div>
+
+                <!-- Landscape 2 -->
+                <div class="reveal-up glow-container cinematic-grain bento-full"
+                    style="border-radius: 12px; overflow: hidden;">
+                    <img src="images/Aura/Gemini_Generated_Image_u5g8wqu5g8wqu5g8.png" alt="Aura System Render 2"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; aspect-ratio: 16/9;">
+                </div>
+
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">results</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0;">The digital overhaul of Aura Aerial Systems didn't just look better—it flew
+                        higher in every key business metric.</p>
+                    <br>
+                    <p style="margin: 0;"><b>+185% Enterprise Inquiries:</b> The shift to a premium, "Industrial-First"
+                        aesthetic attracted procurement officers from construction and cinematography firms.</p>
+                    <br>
+                    <p style="margin: 0;"><b>3:30 Average Time on Site:</b> By turning the landing page into an
+                        interactive "flight," user engagement time tripled.</p>
+                    <br>
+                    <p style="margin: 0;"><b>Global Distribution Growth:</b> The site’s clear, modular architecture
+                        allowed Aura to sign four new international distributors within two months of launch.</p>
+                    <br>
+                    <p style="margin: 0;"><b>Zero Lag UX:</b> Despite the heavy use of video and 3D assets, the site
+                        maintained a 95+ Performance Score, ensuring a smooth experience on field-site tablets and
+                        mobile devices.</p>
+                    <br>
+
+                    <h2 style="font-size: 2.2rem; margin-top: 2rem;"><span class="accent-serif">Tech Stack</span>
+                    </h2>
+                    <br>
+                    <p style="margin: 0;"><b>Engine:</b> Framer (High-Fidelity Prototyping & Production)</p>
+                    <p style="margin: 0;"><b>Motion:</b> Scroll-Targeted Video & Parallax Layers</p>
+                    <p style="margin: 0;"><b>Optimization:</b> WebP Image Sequences & CDN-hosted 4K Video</p>
+                    <p style="margin: 0;"><b>Management:</b> Framer CMS for Fleet Updates</p>
+
+                    <div
+                        style="margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-left: 4px solid #b6ff3b; border-radius: 8px;">
+                        <p
+                            style="font-style: italic; font-family: var(--font-serif); font-size: 1.25rem; color: #ffffffb2;">
+                            "Our drones are built for precision, and Shane built a website that matches that standard.
+                            We finally have a digital showroom that does justice to the tech we fly."</p>
+                        <p style="margin-top: 1rem; margin-bottom: 0; font-weight: bold; color: var(--accent);">— CTO,
+                            Aura Aerial Systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 5rem;">
+                <a href="index.html#work" class="btn-growth">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Footer / CTA (The 'Close') -->
+    <footer class="footer section-padding" id="contact" style="margin-top: auto;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="footer-bottom">
+                <div class="footer-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"></div>
+                <div class="copyright">© 2026 Gillty Design. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

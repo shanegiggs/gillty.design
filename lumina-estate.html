@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricia's Therapies | Gillty Design</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis HTML Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme" style="display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Navigation (Minimalist) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo desktop-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"
+                    style="max-height: 50px;"></a>
+            <a href="index.html" class="logo mobile-logo"><img src="images/logos/ChatGPT Image Dec 17, 2025, 10_49_48 AM.png" alt="Gillty Mobile Logo"
+                    style="max-height: 50px;"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="portfolio-hero section-padding" style="padding-top: 15rem; padding-bottom: 5rem;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem;"><span class="accent-serif">Tricia's
+                    Therapies</span></h1>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Holistic Wellness & Nursing</p>
+            <a href="https://triciastherapies.com/" target="_blank" rel="noopener noreferrer" class="btn-growth">View Live Site</a>
+        </div>
+    </header>
+
+    <section class="portfolio-hero-image container reveal-up" style="margin-bottom: 5rem;">
+        <div class="glow-container cinematic-grain" style="border-radius: 12px; overflow: hidden; height: 60vh;">
+            <img src="images/Tricias Therapies/Tricia.png" alt="Tricia's Therapies Platform Design"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+        </div>
+    </section>
+
+    <section class="portfolio-content section-padding" style="padding-top: 2rem;">
+        <div class="container container-medium">
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">challenge</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">Tricia’s Therapies, led by a former Clinical Nurse
+                        Manager and Director of Nursing, offered a unique blend of medical knowledge and energetic
+                        healing. However, the brand’s initial digital presence struggled to communicate this
+                        professional duality.</p>
+                    <p style="margin: 0; margin-bottom: 1rem;"><strong>The primary obstacles included:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>The "Clinical vs. Spiritual" Gap:</strong> The brand
+                            needed to appeal to people seeking alternative healing (Reiki, Rahanni) without losing the
+                            trust earned from Tricia’s 18 years of high-level nursing experience.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Service Navigation:</strong> With diverse offerings
+                            ranging from Psychotherapy to Integrated Energy Therapy, users were often unsure which path
+                            was right for their specific needs.</li>
+                        <li><strong>Manual Booking Friction:</strong> The absence of a streamlined inquiry and
+                            educational flow meant much of the practitioner's time was spent answering basic procedural
+                            questions rather than focusing on client care.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">solution</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">I developed a clean, empathetic, and professional web
+                        experience that prioritizes "The Path to Healing." The design focuses on soft aesthetics backed
+                        by a clear, authoritative structure.</p>
+                    <p style="margin: 0; margin-bottom: 1rem;"><strong>Strategic Implementations:</strong></p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>The Trust-First Bio Architecture:</strong> I
+                            positioned Tricia’s extensive nursing background (Dementia and Palliative care) as the
+                            foundation of the site. This immediately established professional credibility before
+                            introducing the holistic services.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Categorized Service Modalities:</strong> I organized
+                            the diverse treatments into distinct "pillars of care." This allowed users to self-identify
+                            their needs—whether they were seeking mental health support through Counseling or energetic
+                            alignment through Rahanni.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Education-Led Conversion:</strong> Instead of a
+                            hard-sell approach, I implemented an "Informed Healing" strategy. Each service page was
+                            designed to explain the "what" and the "why," lowering the barrier to entry for users new to
+                            energy healing.</li>
+                        <li><strong>Integrated Community Growth:</strong> I prioritized a high-visibility newsletter
+                            integration and community-focused CTAs, transforming the site from a static business card
+                            into a growing wellness ecosystem.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Image Gallery Section: Add more visual elements by duplicating the image blocks -->
+            <div class="portfolio-gallery"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <!-- Image Block 1 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Tricias Therapies/Tricia's.jpeg" alt="Tricia's Therapies Details"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <!-- Image Block 2 -->
+                <div class="reveal-up glow-container cinematic-grain"
+                    style="border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; width: 100%;">
+                    <img src="images/Tricias Therapies/Tricia.png" alt="Tricia's Therapies Design"
+                        style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                </div>
+                <!-- You can easily copy & paste one of the Image Blocks above to add more pictures to this section -->
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">The <span class="accent-serif">results</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <p style="margin: 0; margin-bottom: 1rem;">The digital transformation of Tricia’s Therapies
+                        successfully aligned the online experience with the physical quality of the sessions provided.
+                    </p>
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Significant Increase in New Client
+                                Inquiries:</strong> The clear categorization of services led to a higher volume of
+                            targeted inquiries from clients who felt they truly understood the offerings.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>High Engagement on Educational Content:</strong>
+                            Average time spent on service-specific pages increased, indicating that users were utilizing
+                            the site as a resource for their wellness journey.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Streamlined Brand Messaging:</strong> By successfully
+                            merging clinical experience with holistic practice, the brand saw a rise in referrals from
+                            both medical professionals and the spiritual community.</li>
+                        <li><strong>Mobile-Optimized Accessibility:</strong> The responsive layout ensured that clients
+                            in high-stress situations could easily access contact information and calming resources from
+                            any device.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 5rem; align-items: start;">
+                <div style="flex: 1 1 250px;">
+                    <h2 style="font-size: 2.2rem; margin: 0;">Tech <span class="accent-serif">Stack</span></h2>
+                </div>
+                <div style="flex: 2 1 400px;">
+                    <ul style="margin: 0; padding-left: 1.5rem; list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Platform:</strong> WordPress / Custom Design
+                            Architecture</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Optimization:</strong> High-Performance Image
+                            Compression for calming visuals</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Integration:</strong> Multi-channel Contact Forms and
+                            Newsletter Sync</li>
+                        <li><strong>Accessibility:</strong> WCAG compliant typography and contrast for diverse age
+                            groups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block reveal-up"
+                style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; align-items: start; background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 12px; border-left: 4px solid var(--accent-gold);">
+                <div style="flex: 1 1 100%;">
+                    <p style="margin: 0; font-size: 1.3rem; font-style: italic; line-height: 1.6;">"Shane was a pleasure
+                        to work with when setting up a website for my business. From the initial proposal to the
+                        completion of the website Shane exceeded my expectations. Highly professional and would highly
+                        recommend."</p>
+                    <p style="margin: 1rem 0 0 0; font-weight: 600; font-size: 1rem; color: var(--accent-gold);">—
+                        Tricia Noone, Founder</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 5rem;">
+                <a href="index.html#work" class="btn-growth">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Footer / CTA (The 'Close') -->
+    <footer class="footer section-padding" id="contact" style="margin-top: auto;">
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="footer-bottom">
+                <div class="footer-logo"><img src="images/logos/Gillty Unstacked.png" alt="Gillty Logo"></div>
+                <div class="copyright">© 2026 Gillty Design. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
